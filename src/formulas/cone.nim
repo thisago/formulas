@@ -3,7 +3,7 @@
   :Email: thiago@oxyoy.com
 
   **Created at:** 06/16/2021 09:57:16 Wednesday
-  **Modified at:** 06/16/2021 11:27:45 AM Wednesday
+  **Modified at:** 06/16/2021 11:33:46 AM Wednesday
 
   ------------------------------------------------------------------------------
 
@@ -11,6 +11,8 @@
   ------------------------------------------------------------------------------
 
   Cone Formulas
+
+  https://en.wikipedia.org/wiki/Cone
 ]##
 
 import ./base
@@ -44,13 +46,13 @@ func `volume=`*(self: var Cone, value: SomeNumber) = self.volumeVal = float valu
 
 func slant*(self: Cone): float =
   ## Calculates the cone slant height with height and radius
-  assert self.heightVal != 0, "No height provided"
-  assert self.radiusVal != 0, "No radius provided"
+  doAssert self.heightVal != 0, "No height provided"
+  doAssert self.radiusVal != 0, "No radius provided"
   sqrt(pow(self.heightVal, 2) + pow(self.radiusVal, 2))
 
 func sideArea*(self: Cone): float =
   ## Calculates the cone side area with slant height and radius
-  assert self.radiusVal != 0, "No radius provided"
+  doAssert self.radiusVal != 0, "No radius provided"
   var slantVal = self.slantVal
   if slantVal == 0:
     slantVal = self.slant()
@@ -58,7 +60,7 @@ func sideArea*(self: Cone): float =
 
 func totalArea*(self: Cone): float =
   ## Calculates the cone total area with slant height and radius
-  assert self.radiusVal != 0, "No radius provided"
+  doAssert self.radiusVal != 0, "No radius provided"
   var slantVal = self.slantVal
   if slantVal == 0:
     slantVal = self.slant()
@@ -66,22 +68,21 @@ func totalArea*(self: Cone): float =
 
 func volume*(self: Cone): float =
   ## Calculates the cone volume with height and radius
-  assert self.heightVal != 0, "No height provided"
-  assert self.radiusVal != 0, "No radius provided"
+  doAssert self.heightVal != 0, "No height provided"
+  doAssert self.radiusVal != 0, "No radius provided"
   (PI * pow(self.radiusVal, 2) * self.heightVal) / 3
 
 func radius*(self: Cone): float =
   ## Calculates the cone radius with height and volume
-  assert self.heightVal != 0, "No height provided"
-  assert self.volumeVal != 0, "No volume provided"
+  doAssert self.heightVal != 0, "No height provided"
+  doAssert self.volumeVal != 0, "No volume provided"
   sqrt((3 * self.volumeVal) / (PI * self.heightVal))
 
 func height*(self: Cone): float =
   ## Calculates the cone height with height and volume
-  assert self.radiusVal != 0, "No radius provided"
-  assert self.volumeVal != 0, "No volume provided"
+  doAssert self.radiusVal != 0, "No radius provided"
+  doAssert self.volumeVal != 0, "No volume provided"
   (self.volumeVal * 3) / (PI * pow(self.radiusVal, 2))
-
 
 
 when isMainModule:
