@@ -3,7 +3,7 @@
   :Email: thiago@oxyoy.com
 
   **Created at:** 06/15/2021 12:48:52 Tuesday
-  **Modified at:** 06/15/2021 02:08:56 PM Tuesday
+  **Modified at:** 06/16/2021 11:29:43 AM Wednesday
 
   ------------------------------------------------------------------------------
 
@@ -24,3 +24,12 @@ Formulas is a Nim library that helps you calculate areas, volumes, edges, etc...
 - edge
 - height
 - volume
+
+## Cone
+
+- slant height
+- side area
+- total area
+- volume
+- radius
+- height

@@ -3,14 +3,14 @@
   :Email: thiago@oxyoy.com
 
   **Created at:** 06/14/2021 10:35:59 Monday
-  **Modified at:** 06/15/2021 10:17:53 AM Tuesday
+  **Modified at:** 06/16/2021 11:29:46 AM Wednesday
 
   ------------------------------------------------------------------------------
 
   tetrahedron
   ------------------------------------------------------------------------------
 
-  Math formulas
+  Tetrahedron Formulas
 
   https://www.matematica.pt/en/useful/math-formulas.php
 ]##
@@ -47,19 +47,19 @@ func `volume=`*(self: var Tetrahedron, value: SomeNumber) = self.volumeVal = flo
 
 func area*(self: Tetrahedron): float =
   ## Calculates the tetrahedron area with edge
-  assert self.edgeVal != 0
+  assert self.edgeVal != 0, "No edge provided"
   pow(self.edgeVal, 2) * sqrt 3.0
 func height*(self: Tetrahedron): float =
   ## Calculates the tetrahedron height with edge
-  assert self.edgeVal != 0
+  assert self.edgeVal != 0, "No edge provided"
   (self.edgeVal * sqrt 6.0) / 3
 func volume*(self: Tetrahedron): float =
-  ## Calculates the tetrahedron volume(cm3) with edge
-  assert self.edgeVal != 0
+  ## Calculates the tetrahedron volume (cm3) with edge
+  assert self.edgeVal != 0, "No edge provided"
   (pow(self.edgeVal, 3) * sqrt 2.0) / 12
 func edge*(self: Tetrahedron): float =
-  ## Calculates the tetrahedron edge with volume(cm3)
-  assert self.volumeVal != 0
+  ## Calculates the tetrahedron edge with volume (cm3)
+  assert self.volumeVal != 0, "No volume provided"
   cbrt((self.volumeVal * 12) / sqrt 2.0)
 
 
