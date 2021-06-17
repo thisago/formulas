@@ -3,7 +3,7 @@
   :Email: thiago@oxyoy.com
 
   **Created at:** 06/16/2021 09:57:16 Wednesday
-  **Modified at:** 06/17/2021 09:43:18 AM Thursday
+  **Modified at:** 06/17/2021 10:01:39 AM Thursday
 
   ------------------------------------------------------------------------------
 
@@ -55,18 +55,14 @@ func slant*(self: Cone): float =
 func sideArea*(self: Cone): float =
   ## Calculates the cone side area (cm2) with slant height and radius
   doAssert self.radiusVal != 0, "No radius provided"
-  var slantVal = self.slantVal
-  if slantVal == 0:
-    slantVal = self.slant()
-  self.pi * self.radiusVal * slantVal
+  doAssert self.slantVal != 0, "No slant provided"
+  self.pi * self.radiusVal * self.slantVal
 
 func totalArea*(self: Cone): float =
   ## Calculates the cone total area (cm2) with slant height and radius
   doAssert self.radiusVal != 0, "No radius provided"
-  var slantVal = self.slantVal
-  if slantVal == 0:
-    slantVal = self.slant()
-  self.pi * self.radiusVal * (self.radiusVal + slantVal)
+  doAssert self.slantVal != 0, "No slant provided"
+  self.pi * self.radiusVal * (self.radiusVal + self.slantVal)
 
 func volume*(self: Cone): float =
   ## Calculates the cone volume with height and radius
