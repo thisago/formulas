@@ -3,7 +3,7 @@
   :Email: thiago@oxyoy.com
 
   **Created at:** 06/15/2021 12:48:52 Tuesday
-  **Modified at:** 06/17/2021 09:49:46 AM Thursday
+  **Modified at:** 06/17/2021 11:21:26 AM Thursday
 
   ------------------------------------------------------------------------------
 
@@ -27,6 +27,21 @@ Now with configurable PI value!
 - height
 - volume
 
+Example:
+```nim
+import formulas
+
+var tetrahedron = initTetrahedron(edge = 10)
+
+echo tetrahedron.area # +- 173.2
+echo tetrahedron.height # +- 8.1
+echo tetrahedron.volume # +- 117.8
+
+tetrahedron.volume = 117.85113019775793
+
+echo tetrahedron.edge # 10
+```
+
 ## Cone
 
 - slant height
@@ -38,6 +53,8 @@ Now with configurable PI value!
 
 Example:
 ```nim
+import formulas
+
 var cone = initCone(height = 10, radius = 8)
 
 echo cone.volume # +- 670.2
