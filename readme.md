@@ -3,7 +3,7 @@
   :Email: thiago@oxyoy.com
 
   **Created at:** 06/15/2021 12:48:52 Tuesday
-  **Modified at:** 06/17/2021 09:52:31 PM Thursday
+  **Modified at:** 06/17/2021 10:04:00 PM Thursday
 
   ------------------------------------------------------------------------------
 
@@ -30,7 +30,7 @@ Now with configurable PI value!
 - height
 - volume
 
-Example:
+Example (`example/tetrahedron.nim`):
 ```nim
 import formulas
 
@@ -40,7 +40,7 @@ echo tetrahedron.area # +- 173.2
 echo tetrahedron.height # +- 8.1
 echo tetrahedron.volume # +- 117.8
 
-tetrahedron.volume = 117.85113019775793
+tetrahedron.volume = 117.85113019775793 # same as tetrahedron.volume()
 
 echo tetrahedron.edge # 10
 ```
@@ -54,18 +54,27 @@ echo tetrahedron.edge # 10
 - radius
 - height
 
-Example:
+Example (`example/cone.nim`):
 ```nim
 import formulas
 
 var cone = initCone(height = 10, radius = 8)
 
-echo cone.volume # +- 670.2
-echo cone.totalArea # +- 522.9
-echo cone.sideArea # 321.8
+echo cone.slant() # 12.8
 
-cone.volume = 670.2064327658226
+cone.slant = cone.slant() # set the slant value to the calculated one
+
+echo cone.volume() # +- 670.2
+echo cone.totalArea() # +- 522.9
+echo cone.sideArea() # 321.8
+
+cone.volume = cone.volume()
+cone.radius = 0
+
+echo cone.radius() # 8
+
+cone.radius = 8
 cone.height = 0
 
-echo cone.height # 10
+echo cone.height() # 10
 ```
