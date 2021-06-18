@@ -3,7 +3,7 @@
   :Email: thiago@oxyoy.com
 
   **Created at:** 06/15/2021 12:48:52 Tuesday
-  **Modified at:** 06/17/2021 11:21:26 AM Thursday
+  **Modified at:** 06/17/2021 09:52:31 PM Thursday
 
   ------------------------------------------------------------------------------
 
@@ -15,9 +15,12 @@
 
 Formulas is a Nim library that helps you calculate areas, volumes, edges, etc...
 
+**Supports version 1.0.0!**
+
 Now with configurable PI value!
 
 **More formulas will be added soon**
+
 
 ----
 ## Tetrahedron
