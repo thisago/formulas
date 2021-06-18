@@ -3,7 +3,7 @@
   :Email: thiago@oxyoy.com
 
   **Created at:** 06/15/2021 12:48:52 Tuesday
-  **Modified at:** 06/17/2021 10:04:00 PM Thursday
+  **Modified at:** 06/18/2021 08:45:38 AM Friday
 
   ------------------------------------------------------------------------------
 
@@ -36,13 +36,14 @@ import formulas
 
 var tetrahedron = initTetrahedron(edge = 10)
 
-echo tetrahedron.area # +- 173.2
-echo tetrahedron.height # +- 8.1
-echo tetrahedron.volume # +- 117.8
+echo tetrahedron.area() # +- 173.2
+echo tetrahedron.height() # +- 8.1
+echo tetrahedron.volume() # +- 117.8
 
 tetrahedron.volume = 117.85113019775793 # same as tetrahedron.volume()
+tetrahedron.edge = 0
 
-echo tetrahedron.edge # 10
+echo tetrahedron.edge() # 10
 ```
 
 ## Cone
