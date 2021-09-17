@@ -1,17 +1,10 @@
-##[
-  :Author: Thiago Navarro
-  :Email: thiago@oxyoy.com
+#[
+  Created at: 06/17/2021 21:57:11 Thursday
+  Modified at: 09/17/2021 12:53:08 AM Friday
 
-  **Created at:** 06/17/2021 21:57:11 Thursday
-  **Modified at:** 06/18/2021 08:45:30 AM Friday
-
-  ------------------------------------------------------------------------------
-
-  tetrahedron
-  ------------------------------------------------------------------------------
-
-  This is a example of tetrahedron formulas uses
-]##
+        Copyright (C) 2021 Thiago Navarro
+  See file "license" for details about copyright
+]#
 
 import formulas
 

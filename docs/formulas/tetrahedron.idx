@@ -1,0 +1,9 @@
+initTetrahedron	formulas/tetrahedron.html#initTetrahedron,SomeNumber,SomeNumber,SomeNumber,SomeNumber	tetrahedron: initTetrahedron(area, edge, height, volume: SomeNumber = 0): Tetrahedron	
+area=	formulas/tetrahedron.html#area=,Tetrahedron,SomeNumber	tetrahedron: area=(self: var Tetrahedron; value: SomeNumber)	
+edge=	formulas/tetrahedron.html#edge=,Tetrahedron,SomeNumber	tetrahedron: edge=(self: var Tetrahedron; value: SomeNumber)	
+height=	formulas/tetrahedron.html#height=,Tetrahedron,SomeNumber	tetrahedron: height=(self: var Tetrahedron; value: SomeNumber)	
+volume=	formulas/tetrahedron.html#volume=,Tetrahedron,SomeNumber	tetrahedron: volume=(self: var Tetrahedron; value: SomeNumber)	
+area	formulas/tetrahedron.html#area,Tetrahedron	tetrahedron: area(self: Tetrahedron): float	
+height	formulas/tetrahedron.html#height,Tetrahedron	tetrahedron: height(self: Tetrahedron): float	
+volume	formulas/tetrahedron.html#volume,Tetrahedron	tetrahedron: volume(self: Tetrahedron): float	
+edge	formulas/tetrahedron.html#edge,Tetrahedron	tetrahedron: edge(self: Tetrahedron): float	

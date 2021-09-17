@@ -1,23 +1,15 @@
-##[
-  :Author: Thiago Navarro
-  :Email: thiago@oxyoy.com
+#[
+  Created at: 06/15/2021 10:23:57 Tuesday
+  Modified at: 09/17/2021 12:50:02 AM Friday
 
-  **Created at:** 06/15/2021 10:23:57 Tuesday
-  **Modified at:** 06/17/2021 10:02:19 AM Thursday
-
-  ------------------------------------------------------------------------------
-
-  test1
-  ------------------------------------------------------------------------------
-
-  Testing all formulas
-]##
+        Copyright (C) 2021 Thiago Navarro
+  See file "license" for details about copyright
+]#
 
 import unittest
 
 import ./formulas
 from std/math import nil
-
 
 proc round(x: SomeFloat): int =
   math.round(x).int

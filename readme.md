@@ -3,7 +3,7 @@
   :Email: thiago@oxyoy.com
 
   **Created at:** 06/15/2021 12:48:52 Tuesday
-  **Modified at:** 06/18/2021 08:45:38 AM Friday
+  **Modified at:** 09/17/2021 01:00:11 AM Friday
 
   ------------------------------------------------------------------------------
 
@@ -79,3 +79,11 @@ cone.height = 0
 
 echo cone.height() # 10
 ```
+
+## TODO
+
+- [ ] Change the nimble package url from gitea to github
+
+## License
+
+MIT

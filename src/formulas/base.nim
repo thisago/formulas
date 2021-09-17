@@ -1,17 +1,11 @@
-##[
-  :Author: Thiago Navarro
-  :Email: thiago@oxyoy.com
+#[
+  Created at: 06/15/2021 10:16:42 Tuesday
+  Modified at: 09/17/2021 12:52:10 AM Friday
 
-  **Created at:** 06/15/2021 10:16:42 Tuesday
-  **Modified at:** 06/17/2021 09:43:05 AM Thursday
+        Copyright (C) 2021 Thiago Navarro
+  See file "license" for details about copyright
+]#
 
-  ------------------------------------------------------------------------------
-
-  base
-  ------------------------------------------------------------------------------
-
-  Base module for all other formulas
-]##
 
 type
   Shape* = object of RootObj

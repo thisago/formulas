@@ -1,15 +1,12 @@
+#[
+  Created at: 06/14/2021 10:35:59 Monday
+  Modified at: 09/17/2021 12:51:28 AM Friday
+
+        Copyright (C) 2021 Thiago Navarro
+  See file "license" for details about copyright
+]#
+
 ##[
-  :Author: Thiago Navarro
-  :Email: thiago@oxyoy.com
-
-  **Created at:** 06/14/2021 10:35:59 Monday
-  **Modified at:** 06/16/2021 11:29:46 AM Wednesday
-
-  ------------------------------------------------------------------------------
-
-  tetrahedron
-  ------------------------------------------------------------------------------
-
   Tetrahedron Formulas
 
   https://www.matematica.pt/en/useful/math-formulas.php

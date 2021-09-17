@@ -1,79 +1,77 @@
 #[
   Created at: 06/16/2021 09:57:16 Wednesday
-  Modified at: 09/17/2021 12:57:21 AM Friday
+  Modified at: 09/17/2021 12:58:19 AM Friday
 
         Copyright (C) 2021 Thiago Navarro
   See file "license" for details about copyright
 ]#
 
 ##[
-  Cone Formulas
+  **WIP**
 
-  https://en.wikipedia.org/wiki/Cone
+  Triangle Formulas
+
+  https://en.wikipedia.org/wiki/Triangle
 ]##
 
 import ./base
 import math
 
 type
-  Cone = object of Shape
-    slantVal*, totalAreaVal*, heightVal*, radiusVal*, volumeVal*: float
-    pi*: float ## Configurable PI value
+  Triangle = object of Shape
+    baseEdgeVal*, edgeVal*, parallelSectionVal*, heightVal*: float
 
 # Init
 
-func initCone*(slant, totalArea, height, radius, volume: SomeNumber = 0; pi = PI): Cone =
-  ## Creates new Cone
-  Cone(
-    slantVal: float slant,
-    totalAreaVal: float totalArea,
+func initTriangle*(baseEdge, edge, parallelSection, height: SomeNumber = 0): Triangle =
+  ## Creates new Triangle
+  Triangle(
+    baseEdgeVal: float baseEdge,
+    edgeVal: float edge,
+    parallelSectionVal: float parallelSection,
     heightVal: float height,
-    radiusVal: float radius,
-    volumeVal: float volume,
-    pi: float pi,
   )
 
 # Setters
 
-func `slant=`*(self: var Cone, value: SomeNumber) = self.slantVal = float value
-func `totalArea=`*(self: var Cone, value: SomeNumber) = self.totalAreaVal = float value
-func `height=`*(self: var Cone, value: SomeNumber) = self.heightVal = float value
-func `radius=`*(self: var Cone, value: SomeNumber) = self.radiusVal = float value
-func `volume=`*(self: var Cone, value: SomeNumber) = self.volumeVal = float value
+func `baseEdge=`*(self: var Triangle, value: SomeNumber) = self.baseEdgeVal = float value
+func `edge=`*(self: var Triangle, value: SomeNumber) = self.edgeVal = float value
+func `parallelSection=`*(self: var Triangle, value: SomeNumber) = self.parallelSectionVal = float value
+func `height=`*(self: var Triangle, value: SomeNumber) = self.heightVal = float value
 
 # Calculations
 
-func slant*(self: Cone): float =
+func slant*(self: Triangle): float =
   ## Calculates the cone slant height with height and radius
   doAssert self.heightVal != 0, "No height provided"
   doAssert self.radiusVal != 0, "No radius provided"
   sqrt(pow(self.heightVal, 2) + pow(self.radiusVal, 2))
 
-func sideArea*(self: Cone): float =
+func sideArea*(self: Triangle): float =
   ## Calculates the cone side area (cm2) with slant height and radius
   doAssert self.radiusVal != 0, "No radius provided"
   doAssert self.slantVal != 0, "No slant provided"
   self.pi * self.radiusVal * self.slantVal
 
-func totalArea*(self: Cone): float =
+func totalArea*(self: Triangle): float =
   ## Calculates the cone total area (cm2) with slant height and radius
   doAssert self.radiusVal != 0, "No radius provided"
   doAssert self.slantVal != 0, "No slant provided"
   self.pi * self.radiusVal * (self.radiusVal + self.slantVal)
 
-func volume*(self: Cone): float =
+func volume*(self: Triangle): float =
   ## Calculates the cone volume with height and radius
   doAssert self.heightVal != 0, "No height provided"
   doAssert self.radiusVal != 0, "No radius provided"
   (self.pi * pow(self.radiusVal, 2) * self.heightVal) / 3
 
-func radius*(self: Cone): float =
+func radius*(self: Triangle): float =
   ## Calculates the cone radius with height and volume
   doAssert self.heightVal != 0, "No height provided"
   doAssert self.volumeVal != 0, "No volume provided"
   sqrt((3 * self.volumeVal) / (self.pi * self.heightVal))
 
-func height*(self: Cone): float =
+func height*(self: Triangle): float =
   ## Calculates the cone height with height and volume
   doAssert self.radiusVal != 0, "No radius provided"
   doAssert self.volumeVal != 0, "No volume provided"
@@ -81,7 +79,7 @@ func height*(self: Cone): float =
 
 
 when isMainModule:
-  var cone = initCone(height = 10, radius = 8)
+  var cone = initTriangle(height = 10, radius = 8)
 
   echo cone.slant # 12.8
   echo cone.sideArea # 321.6

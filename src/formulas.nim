@@ -1,17 +1,10 @@
-##[
-  :Author: Thiago Navarro
-  :Email: thiago@oxyoy.com
+#[
+  Created at: 06/15/2021 10:18:17 Tuesday
+  Modified at: 09/17/2021 12:58:25 AM Friday
 
-  **Created at:** 06/15/2021 10:18:17 Tuesday
-  **Modified at:** 06/16/2021 10:50:13 AM Wednesday
-
-  ------------------------------------------------------------------------------
-
-  formulas
-  ------------------------------------------------------------------------------
-
-  Formulas
-]##
+        Copyright (C) 2021 Thiago Navarro
+  See file "license" for details about copyright
+]#
 
 
 import ./formulas/tetrahedron
@@ -19,3 +12,6 @@ export tetrahedron
 
 import ./formulas/cone
 export cone
+
+# import ./formulas/triangle
+# export triangle

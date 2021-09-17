@@ -1,0 +1,12 @@
+initCone	formulas/cone.html#initCone,SomeNumber,SomeNumber,SomeNumber,SomeNumber,SomeNumber	cone: initCone(slant, totalArea, height, radius, volume: SomeNumber = 0; pi = PI): Cone	
+slant=	formulas/cone.html#slant=,Cone,SomeNumber	cone: slant=(self: var Cone; value: SomeNumber)	
+totalArea=	formulas/cone.html#totalArea=,Cone,SomeNumber	cone: totalArea=(self: var Cone; value: SomeNumber)	
+height=	formulas/cone.html#height=,Cone,SomeNumber	cone: height=(self: var Cone; value: SomeNumber)	
+radius=	formulas/cone.html#radius=,Cone,SomeNumber	cone: radius=(self: var Cone; value: SomeNumber)	
+volume=	formulas/cone.html#volume=,Cone,SomeNumber	cone: volume=(self: var Cone; value: SomeNumber)	
+slant	formulas/cone.html#slant,Cone	cone: slant(self: Cone): float	
+sideArea	formulas/cone.html#sideArea,Cone	cone: sideArea(self: Cone): float	
+totalArea	formulas/cone.html#totalArea,Cone	cone: totalArea(self: Cone): float	
+volume	formulas/cone.html#volume,Cone	cone: volume(self: Cone): float	
+radius	formulas/cone.html#radius,Cone	cone: radius(self: Cone): float	
+height	formulas/cone.html#height,Cone	cone: height(self: Cone): float	

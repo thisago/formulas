@@ -1,17 +1,11 @@
-##[
-  :Author: Thiago Navarro
-  :Email: thiago@oxyoy.com
+#[
+  Created at: 06/17/2021 21:59:24 Thursday
+  Modified at: 09/17/2021 12:52:56 AM Friday
 
-  **Created at:** 06/17/2021 21:59:24 Thursday
-  **Modified at:** 06/17/2021 10:02:19 PM Thursday
+        Copyright (C) 2021 Thiago Navarro
+  See file "license" for details about copyright
+]#
 
-  ------------------------------------------------------------------------------
-
-  cone
-  ------------------------------------------------------------------------------
-
-  An example of cone formulas usage
-]##
 
 import formulas
 
